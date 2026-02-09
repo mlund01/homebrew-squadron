@@ -5,21 +5,21 @@
 class Squadron < Formula
   desc "CLI for defining and running AI agents and multi-agent workflows"
   homepage "https://github.com/mlund01/squadron"
-  version "0.0.6"
+  version "0.0.7"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/mlund01/squadron/releases/download/v0.0.6/squadron_darwin_amd64.tar.gz"
-      sha256 "d67f6b1f8f6aa250d3c68fbaaf0756aebde55d1215ff2fe1f82694750ca9802e"
+      url "https://github.com/mlund01/squadron/releases/download/v0.0.7/squadron_darwin_amd64.tar.gz"
+      sha256 "9416eed9b621cbb9db9a36506ae18453ad5106c684bc26cfd124f689688ec35f"
 
       def install
         bin.install "squadron"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/mlund01/squadron/releases/download/v0.0.6/squadron_darwin_arm64.tar.gz"
-      sha256 "b96c79f73036932225f07a4103fa6ea28a126eddcb592761082464f8c16ec660"
+      url "https://github.com/mlund01/squadron/releases/download/v0.0.7/squadron_darwin_arm64.tar.gz"
+      sha256 "320f2dd7c514667bddf1193e5899a2b6025c27b490075d0bfc8362189a58883c"
 
       def install
         bin.install "squadron"
@@ -29,15 +29,15 @@ class Squadron < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/mlund01/squadron/releases/download/v0.0.6/squadron_linux_amd64.tar.gz"
-      sha256 "b01720a24f90a8b275b9c682a2b39dbc37cf892dc6c2773388a84e7a192cf5b7"
+      url "https://github.com/mlund01/squadron/releases/download/v0.0.7/squadron_linux_amd64.tar.gz"
+      sha256 "21a46cf3d25efa22e12af31c585a3b72b422bf61d86cdbcca56773cc423d9fbc"
       def install
         bin.install "squadron"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/mlund01/squadron/releases/download/v0.0.6/squadron_linux_arm64.tar.gz"
-      sha256 "0f04bd4c6d94d6ed5b5b7ecf26341cd7646f67a4c8a0c4c8b5c92aa255de0cc3"
+      url "https://github.com/mlund01/squadron/releases/download/v0.0.7/squadron_linux_arm64.tar.gz"
+      sha256 "1f16d8cf70d39c41ceed36673b0a9dfc75c5053198435a53fa6ae5ce75a381e2"
       def install
         bin.install "squadron"
       end
