@@ -3,7 +3,7 @@ cask "squadron" do
   name "squadron"
   desc "CLI for defining and running AI agents and multi-agent missions"
   homepage "https://github.com/mlund01/squadron"
-  version "0.0.12"
+  version "0.0.13"
 
   livecheck do
     skip "Auto-generated on release."
@@ -14,22 +14,22 @@ cask "squadron" do
   on_macos do
     on_intel do
       url "https://github.com/mlund01/squadron/releases/download/v#{version}/squadron_darwin_amd64.tar.gz"
-      sha256 "b062d55eca37b56168437b144866077b260b19158bcb81d0728ea1a41ea94e09"
+      sha256 "288e531258c3f2a0ca988a2c8f49f5e7e075fb1454e73750e86bf78310bcdaee"
     end
     on_arm do
       url "https://github.com/mlund01/squadron/releases/download/v#{version}/squadron_darwin_arm64.tar.gz"
-      sha256 "a3b9a5ed5cc2e514c7b51cfa16b2a373b27655914f6f48d33680fb3e5a43fce2"
+      sha256 "3e77c2186ad9434bcb585d76131170fde823a3798be1a183a76da6a779c2d502"
     end
   end
 
   on_linux do
     on_intel do
       url "https://github.com/mlund01/squadron/releases/download/v#{version}/squadron_linux_amd64.tar.gz"
-      sha256 "5ebfbe76b4517897d3dea3fbe5e5b7bac9f34e9b8372e4ffc0c4ce267fb7fe3e"
+      sha256 "1e6ba3725d3d7cb4b9c2a9223fd2aac371dda548010486129f7551b97fa96c47"
     end
     on_arm do
       url "https://github.com/mlund01/squadron/releases/download/v#{version}/squadron_linux_arm64.tar.gz"
-      sha256 "fa63b9eff0044b24cfc2024ca2de6e5ffb1d28ac49750cfd128889b3ab78c327"
+      sha256 "ba71b4afc474d5c0c08e0f2ffa8d39ab80656346ccc82b7c56af667d41176ed3"
     end
   end
 
